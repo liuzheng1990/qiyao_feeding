@@ -1,0 +1,17 @@
+{% extends 'qiyao_events/base.html' %}
+
+{% block content %}
+<div class="card">
+  <h4 class="card-header">删除记录</h4>
+  <div class="card-body">
+    <form method="post">
+      {% csrf_token %}
+      <h2 class="text-danger">确定要删除改记录？</h2>
+      <div class="form-group">
+        <button class="btn btn-danger" type="submit">确定</button>
+        <a type="button" class="btn btn-secondary" href="{% url 'events-list' %}">取消</a>
+      </div>
+    </form>
+  </div>
+</div>
+{% endblock %}
