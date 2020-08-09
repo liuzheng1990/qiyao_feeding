@@ -5,6 +5,7 @@
 <form method="post">
   {% csrf_token %}
   {{ form | crispy }}
-  <input type="submit" class="btn btn-primary" value="Confirm">
+  <input type="submit" class="btn btn-primary" value="添加">
+  <a type="button" class="btn btn-secondary" href="{% url 'events-list' %}">取消</a>
 </form>
 {% endblock %}
