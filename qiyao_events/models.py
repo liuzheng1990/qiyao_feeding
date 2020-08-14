@@ -7,8 +7,8 @@ class QiyaoEvent(models.Model):
     EVENT_TYPE_CHOICES = [
         ('START_FEED', '开始哺乳'),
         ('STOP_FEED', '结束哺乳'),
-        ('START_FEED', '开始睡觉'),
-        ('END_FEED', '结束睡觉'),
+        ('START_SLEEP', '开始睡觉'),
+        ('STOP_SLEEP', '结束睡觉'),
         ('PEE', '小便'),
         ('PASS_MOTION', '大便'),
         ('BOTTLE_FEED', '瓶喂')

@@ -10,7 +10,7 @@ def index(request):
 class EventListView(ListView):
     model = QiyaoEvent
     def get_queryset(self):
-        return QiyaoEvent.objects.order_by("time").all()[:10]
+        return QiyaoEvent.objects.order_by("-time").all()[:12]
 
 
 class EventAddView(CreateView):
